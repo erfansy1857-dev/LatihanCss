@@ -33,7 +33,7 @@ ul{
 }
 
 .gambar{
-    width: 35%;
+    width: 15%;
     height: auto;
     border: 2px solid #000;
     border-radius: 1%;
@@ -41,7 +41,7 @@ ul{
 }
 
 .gambar:hover{
-width: 100%;
+width: 50%;
 height: auto;
 border-color: black;
 }
