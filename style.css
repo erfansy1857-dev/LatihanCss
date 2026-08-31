@@ -1,0 +1,47 @@
+contoh External Css
+h5{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+ol{
+    font-family: 'Courier New';
+    font-size: 14px;
+    color:azure;
+}
+
+ul{
+    font-family: 'Courier New';
+    font-size: 14px;
+    color:rgb(254, 141, 3);
+}
+
+.paragraf{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: cadetblue;
+    text-align: center;
+}
+
+#text{
+    font-size: 18px;
+    text-decoration: highlight;
+    color: cadetblue;
+    text-align: right;
+}
+
+.gambar{
+    width: 50%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 1%;
+    border-color: black;
+}
+
+.gambar :hover {
+width: 15%;
+height: auto;
+border-color: black;
+}
