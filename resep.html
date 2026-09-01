@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Rendang Daging Sapi</title>
+    
+    <!-- CSS EKSTERNAL -->
+    <link rel="stylesheet" href="stylee.css">
+
+    <!-- CSS INTERNAL -->
+    <style>
+        body {
+            background-color: #ffffff; /* Polos putih bersih tanpa latar kartu */
+            color: #2c3e50;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        /* Efek Hover Judul */
+        .recipe-title {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .recipe-title:hover {
+            color: #c0392b; /* Berubah menjadi merah gelap khas rendang saat di-hover */
+        }
+        .section-title {
+            font-size: 1.5rem;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+    </style>
+
+    <!-- JS INTERNAL -->
+    <script>
+        function hitungWaktuMasak() {
+            alert("Estimasi waktu memasak Rendang Daging Sapi tradisional adalah sekitar 3 - 4 jam hingga bumbu meresap sempurna.");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- CONTAINER UTAMA (Desain Polos Tanpa Kartu / Tanpa Box Shadow) -->
+    <!-- CSS INLINE digunakan untuk mengatur lebar maksimal konten agar rapi di tengah -->
+    <div class="recipe-container" style="max-width: 700px; margin: 0 auto; text-align: center;">
+        
+        <!-- Wadah Gambar Pembungkus Rasio 1:1, Berbentuk Bulat & Efek Zoom saat Hover -->
+        <div class="image-container">
+            <!-- Gambar Rendang Daging Sapi -->
+            <img src="rendangjier.webp" alt="Rendang Daging Sapi">
+        </div>
+
+        <!-- Judul Resep -->
+        <h1 class="recipe-title">Rendang Daging Sapi</h1>
+
+        <!-- Fitur Interaktif Pengganti (JS ATRIBUT INLINE HTML) -->
+        <!-- Tombol polos tanpa underline untuk cek durasi masak -->
+        <button class="btn" onclick="hitungWaktuMasak()" style="text-decoration: none;">⏱️ Cek Durasi Memasak</button>
+        <button class="btn" id="btnTips" style="text-decoration: none;">💡 Tips Daging Empuk</button>
+
+        <!-- Bahan & Alat (Warna Hijau Gelap) -->
+        <h2 class="section-title" style="text-align: left;">Bahan & Alat</h2>
+        <ul class="recipe-list list-ingredients">
+            <li>1 kg Daging sapi (potong sesuai selera)</li>
+            <li>1.000 ml Santan kental & 1.000 ml Santan encer</li>
+            <li>2 Lembar daun kunyit, 3 batang serai, 5 lembar daun jeruk</li>
+            <li>Bumbu halus: Bawang merah, bawang putih, cabai merah, jahe, lengkuas, ketumbar</li>
+            <li>Wajan besar (kuali) & Pengaduk kayu panjang</li>
+        </ul>
+
+        <!-- Langkah-langkah (Warna Biru Slate) -->
+        <h2 class="section-title" style="text-align: left;">Langkah Pembuatan</h2>
+        <ol class="recipe-list list-steps">
+            <li>Tumis bumbu halus bersama serai, daun kunyit, dan daun jeruk hingga harum di wajan besar.</li>
+            <li>Tuangkan santan encer dan santan kental, aduk terus secara perlahan agar santan tidak pecah.</li>
+            <li>Masukkan potongan daging sapi, kecilkan api, lalu aduk secara berkala.</li>
+            <li>Masak terus selama beberapa jam hingga santan mengering, mengeluarkan minyak, dan bumbu berubah menjadi cokelat gelap atau hitam.</li>
+        </ol>
+
+    </div>
+
+    <!-- JS EKSTERNAL -->
+    <script src="script.js"></script>
+    <div style="text-align: right;">
+    <a href="index.html"><button class="btn" style="text-decoration: none;">🏠 Kembali ke Beranda</button></a>
+    </div>
+</body>
+</html>

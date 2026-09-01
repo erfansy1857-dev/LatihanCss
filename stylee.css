@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Memastikan Rasio Gambar 1:1, tepat di tengah, dan berbentuk lingkaran */
+.image-container {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran sempurna */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* Pindahkan transisi ke wadah utama agar seluruh lingkaran membesar halus */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+/* EFEK HOVER: Seluruh lingkaran ikut membesar utuh */
+.image-container:hover {
+    transform: scale(1.25); /* Mengubah ukuran seluruh elemen menjadi 15% lebih besar */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Membuat efek bayangan ikut menebal */
+}
+
+/* Kode untuk tag img di dalamnya dibuat statis (tidak perlu zoom lagi) */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+/* Gaya Tombol Polos Tanpa Underline */
+.btn {
+    background-color: #f1f2f6;
+    color: #2f3542;
+    padding: 8px 16px;
+    border: 1px solid #ced6e0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 5px 20px 5px;
+    text-decoration: none; /* Menjamin tidak ada garis bawah */
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: hsl(0, 100%, 50%);
+}
+
+/* Gaya dasar daftar */
+.recipe-list {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* WARNA TEKS BERBEDA */
+/* Warna tulisan khusus untuk Bahan & Alat (Hijau Gelap) */
+.list-ingredients {
+    color: #1b5e20;
+}
+
+/* Warna tulisan khusus untuk Langkah Pembuatan (Biru Slate) */
+.list-steps {
+    color: #34495e;
+}
+/* Efek kilat hanya saat tombol sedang ditahan klik */

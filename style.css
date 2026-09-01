@@ -45,3 +45,25 @@ width: 50%;
 height: auto;
 border-color: black;
 }
+
+.btn {
+    background-color: #f1f2f6;
+    color: #2f3542;
+    padding: 8px 16px;
+    border: 1px solid #ced6e0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 5px 20px 5px;
+    text-decoration: none; /* Menjamin tidak ada garis bawah */
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+.btn:hover {
+    background-color: hsl(0, 100%, 50%);
+}
+.btn:active {
+    background-color: hsl(108, 88%, 50%); 
+    transform: scale(0.98); /* Efek tombol sedikit mengecil seperti ditekan beneran */
+}
